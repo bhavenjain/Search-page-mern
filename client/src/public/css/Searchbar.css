@@ -1,0 +1,14 @@
+.searchbar__input {
+    width: 30vw;
+    color: white;
+    background: none;
+    border-radius: 23px;
+    border: 1px solid #e7e7e7;
+    height: 5vh;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 1.2rem;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
