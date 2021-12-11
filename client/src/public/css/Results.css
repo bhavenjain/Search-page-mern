@@ -4,7 +4,7 @@
     background-color: white;
     border-bottom: 1px solid lightgray;
     color: black;
-    padding: 30px 60px 50px 50px;
+    padding: 30px 55px 50px 50px;
     overflow: hidden;
     transition: all 800ms;
     box-shadow: -11px 8px 73px -1px rgba(0, 0, 0, 0.3);
@@ -15,7 +15,7 @@
 .results__heading {
     color: #0645AD;
     letter-spacing: 2px;
-    font-size: 1.8vw;
+    font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -23,7 +23,7 @@
     letter-spacing: 1px;
     margin-top: 0.7vh;
     margin-left: 2vw;
-    font-size: 1vw;
+    font-size: 14px;
     color: #A0A0A0;
 
 }
@@ -31,5 +31,19 @@
 .results__description {
     color: #585858;
     margin-top: 2vh;
-    font-size: 1vw;
+    font-size: 14px;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .results__container {
+        padding-left: 5vw;
+        padding-right: 15vw;
+    }
+}
+
+@media all and (min-width: 350px) and (max-width: 700px) {
+    .results__container {
+        padding-left: 5vw;
+        padding-right: 15vw;
+    }
 }

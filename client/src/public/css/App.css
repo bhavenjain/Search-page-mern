@@ -26,10 +26,14 @@
 
 .app__heading {
     margin-top: 5vh;
-    /* margin-left: 0vw; */
-    font-size: 3vw;
+    font-size: 30px;
     letter-spacing: 2px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
 }
 
 .app__number {
@@ -39,16 +43,106 @@
     color: #DCDCDC;
 }
 
+.app__leftContainer {
+    display: flex;
+    flex-direction: column;
+    height: 66vh;
+    width: 23vw;
+    color: #262626;
+    margin-top: 7vh;
+    padding: 20px 20px 10px 20px;
+    background-color: #fdfdfd;
+}
+
+.app__leftHeading {
+    margin-top: 2vh;
+    margin-left: 0vw;
+    color: #0645AD;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-family: Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        'Times New Roman',
+        serif;
+}
+
+.Collapsible {
+    background-color: #262626;
+    margin-top: 1vh;
+    font-size: 20px;
+    padding-top: 10px;
+    border: 1px solid black;
+}
+
+.Collapsible__trigger {
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 2vw;
+    font-weight: bold;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.Collapsible__contentOuter {
+    padding-top: 10px;
+}
+
+.Collapsible__contentInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.app__element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .app__resultsContainer {
     flex-direction: column;
     width: 70vw;
     height: 70vh;
     background-color: #262626;
     margin-top: 7vh;
+    margin-left: 2vw;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 .app__resultsContainer::-webkit-scrollbar {
     display: none;
+}
+
+.app::-webkit-scrollbar {
+    display: none;
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .app__leftContainer {
+        display: none;
+    }
+
+    .app__resultsContainer {
+        margin-left: 0;
+    }
+}
+
+@media all and (min-width: 100px) and (max-width: 700px) {
+    .app__leftContainer {
+        display: none;
+    }
+
+    .app__resultsContainer {
+        margin-left: 0;
+    }
 }
